@@ -11,3 +11,10 @@ def parse_s(input_string):
             return parse_s(input_string[1:-1])
     else:
         return False
+
+#ejemplo de uso para que corra
+from analizadores.analizador_descendente import parse_s
+
+cadena = "aabb"
+resultado = parse_s(cadena)
+print(f"La cadena '{cadena}' es válida:", resultado)
