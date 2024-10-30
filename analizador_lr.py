@@ -27,3 +27,10 @@ parser = yacc.yacc()
 
 def analizar(texto):
     return parser.parse(texto)
+
+#ejemplo de uso para que corra
+from analizadores.analizador_lr import analizar
+
+texto = "4 + 3 * 2"
+resultado = analizar(texto)
+print("Resultado:", resultado)
