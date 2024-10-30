@@ -16,6 +16,14 @@ def t_error(t):
     print(f"Error léxico: {t.value[0]}")
     t.lexer.skip(1)
 
+#ejemplo de uso para que corra
+from analizadores.analizador_lexico import analizar
+
+texto = "3 + 4 * 5"
+tokens = analizar(texto)
+print("Tokens:", tokens)
+
+
 lexer = lex.lex()
 
 def analizar(texto):
